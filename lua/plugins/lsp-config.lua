@@ -18,18 +18,37 @@ return {
     lazy = false,
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-
       local lspconfig = require("lspconfig")
+
       lspconfig.tsserver.setup({
         capabilities = capabilities
       })
+
       lspconfig.solargraph.setup({
         capabilities = capabilities
       })
+
       lspconfig.html.setup({
         capabilities = capabilities
       })
+
       lspconfig.lua_ls.setup({
+        capabilities = capabilities
+      })
+
+      lspconfig.pyright.setup({
+        capabilities = capabilities
+      })
+
+      lspconfig.lua_ls.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.gopls.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.csharp_ls.setup({
         capabilities = capabilities
       })
 
@@ -37,6 +56,7 @@ return {
       vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
       vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, {})
     end,
   },
 }
