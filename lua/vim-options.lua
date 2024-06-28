@@ -23,3 +23,5 @@ vim.keymap.set("n", "<leader>x", ":bd<CR>", { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 vim.wo.number = true
+vim.opt.number = true
+vim.opt.relativenumber = true

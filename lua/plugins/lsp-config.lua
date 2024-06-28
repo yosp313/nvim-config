@@ -52,8 +52,9 @@ return {
         capabilities = capabilities
       })
 
-      lspconfig.intelephense.setup({
-        capabilities = capabilities,
+
+      lspconfig.phpactor.setup({
+        capabilities = capabilities
       })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
