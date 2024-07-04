@@ -40,10 +40,6 @@ return {
         capabilities = capabilities
       })
 
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities,
-      })
-
       lspconfig.gopls.setup({
         capabilities = capabilities,
       })
@@ -53,7 +49,11 @@ return {
       })
 
 
-      lspconfig.phpactor.setup({
+      lspconfig.intelephense.setup({
+        capabilities = capabilities
+      })
+
+      lspconfig.tailwindcss.setup({
         capabilities = capabilities
       })
 
