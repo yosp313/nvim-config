@@ -13,12 +13,12 @@ vim.g.background = "dark"
 vim.opt.swapfile = false
 
 -- Navigate vim panes better
-vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
-vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
-vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
-vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
-vim.keymap.set("n", "<S-Tab>", ":bnext<CR>")
-vim.keymap.set("n", "<Tab>", ":bprevious<CR>")
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { silent = true })
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>', { silent = true })
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>', { silent = true })
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>', { silent = true })
+vim.keymap.set("n", "<S-Tab>", ":bnext<CR>", { silent = true })
+vim.keymap.set("n", "<Tab>", ":bprevious<CR>", { silent = true })
 vim.keymap.set("n", "<leader>x", ":bd<CR>", { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
