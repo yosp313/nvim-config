@@ -28,6 +28,7 @@
   "supermaven-nvim": { "branch": "main", "commit": "c7ab94a6bcde96c79ff51afd6a1494606bb6f10b" },
   "telescope-ui-select.nvim": { "branch": "master", "commit": "6e51d7da30bd139a6950adf2a47fda6df9fa06d2" },
   "telescope.nvim": { "branch": "master", "commit": "d90956833d7c27e73c621a61f20b29fdb7122709" },
+  "trouble.nvim": { "branch": "main", "commit": "bf99ea71a39e322336b7f8be965f86dbf5c65540" },
   "vim-fugitive": { "branch": "master", "commit": "d0c1a437536778bcc8174b7cb2ffdf98f611e6fe" },
   "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
   "vim-wakatime": { "branch": "master", "commit": "3cb40867cb5a3120f9bef76eff88edc7f1dc1a23" },
